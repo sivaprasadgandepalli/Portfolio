@@ -87,8 +87,8 @@ function Home() {
                                 <span style={{ color: 'green' }}><Cursor /></span>
                             </Heading>
                             <Text fontSize='16px' color='lightGrey'>
-                                I have been working as a web developer for the past 1 year, mainly focused on Web Technologies.
-                                I feel comfortable working with technologies like JavaScript, React, Node.js, MongoDB, MySql and many other technologies in the web ecosystem.
+                            I've dedicated the past year to my role as a web developer, specializing in Web
+                             Technologies. I possess proficiency in various technologies within the web ecosystem, including JavaScript, React, Node.js, MongoDB, MySQL, and numerous others.
                             </Text>
                             <Stack spacing={4} direction='row' align='center'>
                                 <Button colorScheme='telegram' size='md'>
@@ -151,7 +151,7 @@ function Home() {
                 <div className='flex justify-center'>
                     <h2 className='text-center mb-4 heading' style={{ color: 'white' }}>Profiles</h2>
                 </div>
-                <h2 className='text-center mb-4 heading' style={{ color: 'white' }}>Profiles</h2>
+                
                 <Profiles/>
 
             </section>
