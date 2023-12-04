@@ -9,7 +9,7 @@ import leetcode from '../images/profiles/leetcode.png';
 export default function Profiles() {
     return (
         <div>
-            <div className='row'>
+            <div className='row text-base'>
                 <div className='col-md-4'>
                     <div className='pcard'>
                         <img src={gfg} />

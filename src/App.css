@@ -1,56 +1,80 @@
-body{
+body {
   background-color: #2A2D6C;
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   width: 100%;
 }
-html{
+
+html {
   scroll-behavior: smooth;
   scroll-padding-top: 4rem;
 }
-.img1{
+
+.img1 {
   height: 300px;
   width: 300px;
 }
 
-h2{
-  color:#fff;
+h2 {
+  color: #fff;
 }
 
-.pcard{
+@media screen and (max-width:1000px) {
+  .pcard {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    margin: 10px 0;
+    gap: 10px;
+    flex-direction: column;
+    background-color: #2A2D6C;
+    padding: .5rem 0;
+    transition: background-color 0.5s;
+  }
+  .pcard h4 {
+    font-size: 1rem;
+  }
+  
+  
+}
+
+.pcard {
   display: flex;
   align-items: center;
   justify-content: space-around;
   color: #fff;
   margin: 10px 0;
   background-color: #2A2D6C;
-  opacity:1;
-  padding: .5em;
-  transition: opacity 0.3s;
+  padding: .5rem 0;
+  transition: background-color 0.5s;
 }
-.pcard img{
+
+.pcard img {
   height: 80px;
   width: 80px;
   object-fit: cover;
   border-radius: 15px;
 }
-.pcard h4{
-  margin-right: 5px;
+
+.pcard h4 {
+  font-size: 1.3rem;
 }
 
-.pcard:hover{
+.pcard:hover {
   background-color: #7178f7;
 }
 
-.pcard a:hover{
+.pcard a:hover {
   color: blue;
 }
 
-#skills header{
+#skills header {
   position: relative;
 }
-#skills header::before{
+
+/* #skills header::before {
   content: '';
   position: absolute;
   left: 0;
@@ -59,12 +83,14 @@ h2{
   width: 25px;
   height: 3px;
   background: skyblue;
-}
-.heading{
+} */
+
+.heading {
   position: relative;
   display: inline-block;
 }
-.heading::before{
+
+.heading::before {
   content: '';
   position: absolute;
   width: 100%;
@@ -72,24 +98,26 @@ h2{
   border-radius: 10px;
   left: 0;
   bottom: -3px;
-  background:rgb(189, 190, 191);
+  background: rgb(189, 190, 191);
 }
-.heading::after{
+
+.heading::after {
   content: '';
   position: absolute;
   background: darkcyan;
   width: 30%;
   height: 4px;
   border-radius: 10px;
-  left:30%;
+  left: 30%;
   bottom: -4px;
 }
-#contact a{
+
+#contact a {
   cursor: pointer;
   transition: all 0.5s;
 }
 
-#contact a:hover{
+#contact a:hover {
   color: rgb(0, 183, 255);
   transform: scale(1.2);
 }

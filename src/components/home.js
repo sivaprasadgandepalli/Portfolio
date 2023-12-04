@@ -22,21 +22,24 @@ function Home() {
         college: "Aditya College Of Engineering",
         stream: "Electronics And Communication Engg.",
         grade: '7.85 Cgpa',
-        duration: '2020-2023'
+        duration: '2020-2023',
+        place:"Surampalem"
     }, {
         id: 2,
         title: "Intermediate",
         college: "Sri Surya Junior College",
         stream: "MPC",
         grade: '9.86 Gpa',
-        duration: '2018-2020'
+        duration: '2018-2020',
+        place:"Jaggampeta"
     }, {
         id: 3,
         title: "SSC",
         college: "Z P P HighSchool",
         stream: "",
         grade: '9.7 Gpa',
-        duration: '2017-2018'
+        duration: '2017-2018',
+        place:"Mallisala"
     }]
     const [text] = useTypewriter({
         words: ['Web Developer', 'Designer', 'Java Developer'],
@@ -68,7 +71,7 @@ function Home() {
             </Navbar>
             {/* hero section */}
 
-            <section className='container pt-5 hero min-h-screen'  id='home'>
+            <section className='container pt-5 hero '  id='home'>
                 <div className='row mt-5'>
                     <div className='col-md-4 mb-5'>
                         <Image src={img1} rounded className='img1 h-full'/>
@@ -107,7 +110,7 @@ function Home() {
 
             </section>
             {/* education section */}
-            <section className='container mb-4 pt-5' id='education'>
+            <section className='container mb-4 pt-5 mt-5' id='education'>
                 <div className='flex justify-center'>
                     <h2 className='text-center heading' style={{ color: 'white' }}>Education</h2>
                 </div>
@@ -127,7 +130,11 @@ function Home() {
                                                 <p><Badge colorScheme='green'>{rec.duration}</Badge></p>
                                                 <p>{rec.grade}</p>
                                             </div>
-                                            <p>{rec.college}</p>
+                                            <div className='d-flex justify-between'>
+                                                <p>{rec.college}</p>
+                                                <p>{rec.place}</p>
+                                            </div>
+                                            
                                         </div>
                                     </Card>
                                 </div>
@@ -171,7 +178,7 @@ function Home() {
                 <Contact />
             </section>
 
-            <section className='container-fluid  py-6 bg-[#2A2D6C] text-white' id='contact'>
+            <section className='container-fluid  py-6 bg-[#2A2D6C] text-white text-center' id='contact'>
                 <div className='flex flex-col justify-center items-center space-y-3'>
                     <h4 className='font-bold-900'>V V D Siva Vara Prasad Gandepalli</h4>
                     <p>All rights are reserved @ 2023</p>

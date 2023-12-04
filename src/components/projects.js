@@ -28,11 +28,11 @@ export default function Projects() {
     "desc": 'The project is to assist in the tracking of vehicles operation and the planning of maintenance to avoid damages/problems'
   },
   {
-    "id": 2, "img": Rms, "title": 'Restraunt Management',
+    "id": 2, "img": Rms, "title": 'Restraunt Application',
     "desc": 'The project is about managing restraunt orders and generating bills for orders.'
   },
   {
-    "id": 3, "img": Crm, "title": 'Car Rental Management',
+    "id": 3, "img": Crm, "title": 'Car Rental Website',
     "desc": 'This enables user can rent a vehicle. This software car Rental System has a very user friendly interface. '
   }];
   return (
@@ -56,7 +56,7 @@ export default function Projects() {
             {InterData.map((item) => {
               return (
                 <div className='' key={item.id}>
-                  <Card className=' mb-4 sm:w-auto'>
+                  <Card className=' mb-4 sm:w-auto transition duration-700 ease-in-out hover:scale-95 hover:opacity-40'>
                     <Card.Img variant="top" src={item.img} style={{ height: '14rem' }} />
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
@@ -80,7 +80,7 @@ export default function Projects() {
             {basicData.map((item) => {
               return (
                 <div className='' key={item.id}>
-                  <Card className=' mb-4 sm:w-auto'>
+                  <Card className=' mb-4 sm:w-auto transition duration-700 ease-in-out hover:scale-95 hover:brightness-50'>
                     <Card.Img variant="top" src={item.img} style={{ height: '14rem' }} />
                     <Card.Body>
                       <Card.Title>{item.title}</Card.Title>
