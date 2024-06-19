@@ -1,0 +1,32 @@
+.box span{
+    color:#01a3a4;
+    font-family:sans-serif;
+    font-size:.9rem;
+}
+.box{
+    background:#232323;
+    width:100%;
+    padding:10px 20px;
+    position:relative;
+}
+.box:nth-child(even){
+    margin:16px 0;
+}
+
+.box::before{
+    position:absolute;
+    content:'';
+    width:16px;
+    height:16px;
+    background:#01a3a4;
+    border-radius:50%;
+    left:-28px;
+    top:0;
+}
+.box p{
+    color:#95a5a6;
+}
+.col-md-6 .h2{
+    font-size:1.5rem;
+    margin:10px 0 10px 20px
+}
