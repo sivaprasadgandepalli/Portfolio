@@ -16,6 +16,10 @@ export default function HeroSection() {
         typeSpeed: 150,
         delaySpeed: 180,
     });
+    const handleContactMeClick = () => {
+        const phoneNumber = '1234567890';
+        window.location.href = `tel:${phoneNumber}`;
+    };
     return (
         <section className='container pt-5' id='home'>
             <div className='row mt-2 px-2'>
@@ -23,7 +27,7 @@ export default function HeroSection() {
                     <img src={img1} className=' h-full w-full rounded-md' />
                 </div>
                 <div className='col-md-8'>
-                    <div className=''>
+                    <div className='lg:pl-5 text-justify hyphens-auto lg:text-left lg:hyphens-none'>
                         <Heading fontSize='20px' color='grey'>
                             Hi,I am
                         </Heading>
@@ -54,6 +58,7 @@ export default function HeroSection() {
                                     target="_blank"
                                     rel="noreferrer">Resume </a><ArrowDownIcon boxSize={5} />
                             </Button>
+                            <Button colorScheme='teal' onClick={handleContactMeClick}>Hire me</Button>
                         </Stack>
                     </div>
                 </div>

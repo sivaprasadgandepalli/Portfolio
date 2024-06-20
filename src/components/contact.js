@@ -66,7 +66,7 @@ export default function Contact() {
             <Form className='px-3 py-3' ref={form} onSubmit={handleSubmitForm}>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
                 <Form.Label>Name</Form.Label>
-                <Form.Control type="text" className='custom-placeholder' placeholder="Your Name" name="from_name" required style={{ backgroundColor: '#d2dae2',color:'#f1f2f6' }}/>
+                <Form.Control type="text" className='' placeholder="Your Name" name="from_name" required style={{ backgroundColor: '#d2dae2',color:'#f1f2f6' }}/>
               </Form.Group>
               <Form.Group className="mb-3" controlId="exampleForm.ControlInput2">
                 <Form.Label>Email address</Form.Label>
