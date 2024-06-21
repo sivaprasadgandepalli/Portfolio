@@ -22,7 +22,7 @@ const ProjectCard = ({ item }) => (
       <Card.Img variant="top" src={item.img} style={{ height: '18rem' }} alt='item.title'/>
       <Card.Body className='card-content'>
         <Card.Title className='text-red-500 text-3xl'>{item.title}</Card.Title>
-        <Text className='line-clamp-6 text-sm text-justify hyphens-auto'>
+        <Text className='line-clamp-6 text-sm'>
           {item.desc}
         </Text>
         <div className='flex gap-1 items-baseline mb-3'>

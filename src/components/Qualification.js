@@ -9,7 +9,7 @@ export default function Qualification() {
             <div className='row'>
                 <div className='col-md-6 mb-4'>
                     <h2 className='h2'>Education</h2>
-                    <div className='wrapper pl-5 border-l-2 hyphens-auto text-justify'>
+                    <div className='wrapper pl-5 border-l-2'>
                         <div className='box'>
                             <span>2020-2024</span>
                             <h5>Batchelor of Technology</h5>
@@ -35,13 +35,13 @@ export default function Qualification() {
                             <span>May 2023-Aug 2023</span>
                             <h5>Full Stack Trainee</h5>
                             <h6 className='font-[500] text-[#ede6e6]'>Technical Hub</h6>
-                            <p className='hyphens-auto text-justify line-clamp-6 lg:line-clamp-none'>I completed a full-stack trainee internship at Technical Hub from May 2023 to August 2023. During this period, I gained proficiency in HTML, CSS, JavaScript, React.js, and Node.js. I applied my skills by building several projects, including a vehicle management system and a car rental website. </p>
+                            <p className=''>I completed a full-stack trainee internship at Technical Hub from May 2023 to August 2023. During this period, I gained proficiency in HTML, CSS, JavaScript, React.js, and Node.js. I applied my skills by building several projects, including a vehicle management system and a car rental website. </p>
                         </div>
                         <div className='box'>
                             <span>Apr 2024-Current</span>
                             <h5>Java Full Stack Intern</h5>
                             <h6 className='font-[500] text-[#ede6e6]'>ExcelR</h6>
-                            <p className='hyphens-auto text-justify line-clamp-6 lg:line-clamp-none'>I joined ExcelR Company as a Java Full Stack Intern on April 8th. This internship is a 5-month program, during which I am gaining in-depth knowledge and hands-on experience in Java full stack development. Throughout the course, I am working on real-world projects and assignments that enhance my skills in both frontend and backend technologies, including Java, Spring Boot, Hibernate,and other essential tools and frameworks. This experience is providing me with a solid foundation in full stack development and preparing me for future professional opportunities in the field. </p>
+                            <p className=''>I joined ExcelR Company as a Java Full Stack Intern on April 8th. This internship is a 5-month program, during which I am gaining in-depth knowledge and hands-on experience in Java full stack development. Throughout the course, I am working on real-world projects and assignments that enhance my skills in both frontend and backend technologies, including Java, Spring Boot, Hibernate,and other essential tools and frameworks. This experience is providing me with a solid foundation in full stack development and preparing me for future professional opportunities in the field. </p>
                         </div>
                     </div>
                 </div>

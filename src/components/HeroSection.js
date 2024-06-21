@@ -24,10 +24,10 @@ export default function HeroSection() {
         <section className='container pt-5' id='home'>
             <div className='row mt-2 px-2'>
                 <div className='col-md-4 lg:mb-5 mb-3 shadow-md'>
-                    <img src={img1} className=' h-full w-full rounded-md' alt='hero image'/>
+                    <img src={img1} className=' h-full w-full rounded-md' alt='hero image' />
                 </div>
                 <div className='col-md-8'>
-                    <div className='lg:pl-5 text-justify hyphens-auto lg:text-left lg:hyphens-none'>
+                    <div className='lg:pl-5'>
                         <Heading fontSize='20px' color='grey'>
                             Hi,I am
                         </Heading>
@@ -39,16 +39,16 @@ export default function HeroSection() {
                             <span style={{ color: 'orange', marginLeft: '5px' }}>{text}</span>
                             <span style={{ color: 'green' }}><Cursor /></span>
                         </Heading>
-                        <p className=' md:pr-[9rem] text-gray-100 text-balance lg:text-left'>
+                        <p className=' md:pr-[9rem] text-gray-100 text-left'>
                             I am a passionate and dedicated web developer specializing in web technologies. I have extensive proficiency in various aspects of the web ecosystem, including front-end development, back-end development, and full-stack solutions.
                         </p>
                         <div className='flex flex-wrap lg:flex-nowrap items-center'>
                             <p className='text-white'>Currently working on</p>
                             <div className='flex items-center mb-3 lg:mb-0'>
-                                <img src={mongodb} className='w-10 h-9' alt='mongodb'/>
-                                <img src={express} className='w-10 h-10' alt='express js'/>
-                                <img src={node} className='w-8 h-8 ml-2' alt='node js'/>
-                                <img src={react} className='w-8 h-8 ml-2' alt='react js'/>
+                                <img src={mongodb} className='w-10 h-9' alt='mongodb' />
+                                <img src={express} className='w-10 h-10' alt='express js' />
+                                <img src={node} className='w-8 h-8 ml-2' alt='node js' />
+                                <img src={react} className='w-8 h-8 ml-2' alt='react js' />
                             </div>
                         </div>
                         <Stack colorscheme='telegram' spacing={4} direction='row' align='center'>
