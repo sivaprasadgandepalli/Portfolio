@@ -23,10 +23,8 @@ export default function HeroSection() {
     return (
         <section className='container pt-5' id='home'>
             <div className='row mt-2 px-2'>
-                <div className='col-md-4 lg:mb-5 mb-3 shadow-md'>
-                    <img src={img1} className=' h-full w-full rounded-md' alt='hero image' />
-                </div>
-                <div className='col-md-8'>
+
+                <div className='col-md-8 order-2 lg:order-1'>
                     <div className='lg:pl-5'>
                         <Heading fontSize='20px' color='grey'>
                             Hi,I am
@@ -61,6 +59,9 @@ export default function HeroSection() {
                             <Button colorScheme='teal' onClick={handleContactMeClick}>Hire me</Button>
                         </Stack>
                     </div>
+                </div>
+                <div className='col-md-4 lg:mb-5 mb-3 shadow-md md:order-2'>
+                    <img src={img1} className=' h-full w-full rounded-md' alt='hero image' loading='lazy' />
                 </div>
             </div>
 
