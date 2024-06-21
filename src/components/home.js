@@ -6,7 +6,6 @@ import { ArrowDownIcon } from '@chakra-ui/icons';
 import { BiUpArrowAlt } from "react-icons/bi";
 import Projects from './projects';
 import Contact from './contact';
-import Profiles from './profiles';
 import SkillSection from './skillSection';
 import NavbarSection from './Navbar';
 import Qualification from './Qualification';

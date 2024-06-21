@@ -24,7 +24,7 @@ export default function HeroSection() {
         <section className='container pt-5' id='home'>
             <div className='row mt-2 px-2'>
                 <div className='col-md-4 lg:mb-5 mb-3 shadow-md'>
-                    <img src={img1} className=' h-full w-full rounded-md' />
+                    <img src={img1} className=' h-full w-full rounded-md' alt='hero image'/>
                 </div>
                 <div className='col-md-8'>
                     <div className='lg:pl-5 text-justify hyphens-auto lg:text-left lg:hyphens-none'>
@@ -45,10 +45,10 @@ export default function HeroSection() {
                         <div className='flex flex-wrap lg:flex-nowrap items-center'>
                             <p className='text-white'>Currently working on</p>
                             <div className='flex items-center mb-3 lg:mb-0'>
-                                <img src={mongodb} className='w-10 h-9' />
-                                <img src={express} className='w-10 h-10' />
-                                <img src={node} className='w-8 h-8 ml-2' />
-                                <img src={react} className='w-8 h-8 ml-2' />
+                                <img src={mongodb} className='w-10 h-9' alt='mongodb'/>
+                                <img src={express} className='w-10 h-10' alt='express js'/>
+                                <img src={node} className='w-8 h-8 ml-2' alt='node js'/>
+                                <img src={react} className='w-8 h-8 ml-2' alt='react js'/>
                             </div>
                         </div>
                         <Stack colorscheme='telegram' spacing={4} direction='row' align='center'>
