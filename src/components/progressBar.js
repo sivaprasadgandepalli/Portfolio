@@ -14,7 +14,7 @@ const ProgressBar = ({ value}) => {
                     return value;
                 }
             });
-        }, 10);
+        }, 30);
 
         return () => clearInterval(interval);
     }, [value]);
