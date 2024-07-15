@@ -14,13 +14,13 @@ import { FaWhatsapp } from "react-icons/fa";
 import '../App.css';
 function Home() {
 
-    const [bg, setBg] = useState('#232323');
+    const [bg, setBg] = useState('#101010');
     const [show, setShow] = useState(false)
     const phoneNumber = '9392471528';
     const handleScroll = () => {
         const scrollTop = window.scrollY || document.documentElement.scrollTop;
         if (scrollTop !== 0) {
-            setBg('#2f3640');
+            setBg('#232323');
             setShow(true)
         } else {
             setBg('#101010');
@@ -67,10 +67,10 @@ function Home() {
                 <Contact />
             </section>
 
-            <FaWhatsapp className='bg-green-500 text-[2.6rem] fixed z-10 bottom-0 left-5 cursor-pointer text-white rounded-md' onClick={() => { window.open(`https://wa.me/${phoneNumber}`, '_blank'); }} style={{ display: show ? 'block' : 'none' }} />
-            <BiUpArrowAlt className=' bg-[#192a56] text-white h-12 w-12 rounded-full p-1 fixed z-10 bottom-0 right-5 cursor-pointer' onClick={scrollToTop} style={{ display: show ? 'block' : 'none' }} />
+            <FaWhatsapp className='transition-all delay-150 bg-green-500 text-[2.6rem] fixed z-10 bottom-[3rem] left-8 cursor-pointer text-white rounded-md' onClick={() => { window.open(`https://wa.me/${phoneNumber}`, '_blank'); }} style={{ display: show ? 'block' : 'none' }} />
+            <BiUpArrowAlt className='transition-all delay-150 bg-[#192a56] text-white h-12 w-12 rounded-full p-1 fixed z-10 bottom-10 right-8 cursor-pointer' onClick={scrollToTop} style={{ display: show ? 'block' : 'none' }} />
 
-            <section className='relative container-fluid  py-6 bg-[#2f3640] text-white text-center' id='contact'>
+            <section className='relative container-fluid  py-6 bg-[#232323] text-white text-center' id='contact'>
                 <div className='flex flex-col justify-center items-center space-y-3'>
                     <h4 className='font-bold-900'>V V D Siva Vara Prasad Gandepalli</h4>
                     <p>All rights are reserved @ 2023</p>

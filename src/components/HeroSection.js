@@ -24,7 +24,7 @@ export default function HeroSection() {
         <section className='container pt-5' id='home'>
             <div className='row mt-2 px-2'>
 
-                <div className='col-md-8 order-2 lg:order-1'>
+                <div className='col-lg-8 col-md-7 order-2 lg:order-1'>
                     <div className='lg:pl-5'>
                         <Heading fontSize='20px' color='grey'>
                             Hi,I am
@@ -37,7 +37,7 @@ export default function HeroSection() {
                             <span style={{ color: 'orange', marginLeft: '5px' }}>{text}</span>
                             <span style={{ color: 'green' }}><Cursor /></span>
                         </Heading>
-                        <p className=' md:pr-[9rem] text-gray-100 text-left'>
+                        <p className=' md:pr-[5rem] lg:pr-[9rem] text-gray-100 text-left'>
                             I am a passionate and dedicated web developer specializing in web technologies. I have extensive proficiency in various aspects of the web ecosystem, including front-end development, back-end development, and full-stack solutions.
                         </p>
                         <div className='flex flex-wrap lg:flex-nowrap items-center'>
@@ -60,7 +60,7 @@ export default function HeroSection() {
                         </Stack>
                     </div>
                 </div>
-                <div className='col-md-4 lg:mb-5 mb-3 shadow-md md:order-2'>
+                <div className='col-lg-4 col-md-5 lg:mb-5 mb-3 shadow-md md:order-2'>
                     <img src={img1} className=' h-full w-full rounded-md' alt='hero image' loading='lazy' />
                 </div>
             </div>

@@ -19,7 +19,7 @@ import { basicData, InterData } from '../data';
 const ProjectCard = ({ item }) => (
   <div className='' key={item.id + "project"}>
     <Card className=' mb-4 sm:w-auto card-img'>
-      <Card.Img variant="top" src={item.img} style={{ height: '18rem' }} alt='item.title'/>
+      <Card.Img variant="top" src={item.img} style={{ height: '18rem' }} alt={item.title}/>
       <Card.Body className='card-content'>
         <Card.Title className='text-red-500 text-3xl'>{item.title}</Card.Title>
         <Text className='line-clamp-6 text-sm'>
@@ -37,7 +37,7 @@ const ProjectCard = ({ item }) => (
         <div className='flex gap-2'>
           {
             item.SourceCode && <Button colorScheme='teal' variant='solid' size='sm'>
-              <a herf={item.SourceCode}>Source Code</a>
+              <a href={item.SourceCode}>Source Code</a>
             </Button>
           }
           {

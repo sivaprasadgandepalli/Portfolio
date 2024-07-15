@@ -6,19 +6,23 @@ import { ArrowDownIcon } from '@chakra-ui/icons';
 import ScrollIntoView from 'react-scroll-into-view';
 import logo from '../images/logo.png';
 import Container from 'react-bootstrap/Container';
-export default function NavbarSection({bg,scrollToTop}) {
+import burger_menu from "../images/basic/burger-menu.svg";
+import '../styles/navbar.css';
+export default function NavbarSection({ bg, scrollToTop }) {
     return (
         <Navbar collapseOnSelect expand="lg" data-bs-theme="dark" sticky='top' style={{ backgroundColor: bg }} className='py-[.73rem]'>
             <Container>
                 <Navbar.Brand href="#home">
                     <img src={logo} className='w-24 h-12 mix-blend-screen' />
                 </Navbar.Brand>
-                <Navbar.Toggle aria-controls="responsive-navbar-nav"/>
-                <Navbar.Collapse id="responsive-navbar-nav">
-                    <Nav className=" ms-auto">
+                <Navbar.Toggle aria-controls="responsive-navbar-nav" className='mr-2 lg:ml-0 custom-toggle-btn'>
+                    <img src={burger_menu} className='h-10 w-10' />
+                </Navbar.Toggle>
+                <Navbar.Collapse id="responsive-navbar-nav" className='ml-[40%]  md:ml-[50%]'>
+                    <Nav className="ms-auto">
                         <ScrollIntoView>
                             <Nav.Link
-                            onClick={scrollToTop}>Home</Nav.Link>
+                                onClick={scrollToTop}>Home</Nav.Link>
                         </ScrollIntoView>
                         <ScrollIntoView selector='#education'>
                             <Nav.Link >Resume</Nav.Link>
@@ -34,7 +38,7 @@ export default function NavbarSection({bg,scrollToTop}) {
                         </ScrollIntoView>
 
                         <ScrollIntoView selector='#contact'>
-                            <button className='bg-[#282828] px-3 text-center flex items-center justify-center lg:ml-5 mt-0 lg:mt-3 shadow-md shadow-black'><Nav.Link>Contact</Nav.Link></button>
+                            <Nav.Link>Contact</Nav.Link>
                         </ScrollIntoView>
                     </Nav>
                 </Navbar.Collapse>

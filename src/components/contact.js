@@ -27,8 +27,7 @@ export default function Contact() {
   return (
     <div className='container text-[#f1f2f6] py-4 px-2'>
       <div className='row'>
-        <div className='col-md-1'></div>
-        <div className='col-md-5 mb-5 mx-2 lg:px-0'>
+        <div className='col-md-6 mb-5 mx-2 lg:px-0'>
           <div className='flex flex-col justify-between items-start space-y-8 overflow-hidden h-full'>
             <div className='flex flex-col '>
               <h2 className='font-bold mb-2'>Got A Question?</h2>
@@ -60,7 +59,6 @@ export default function Contact() {
         </div>
 
         <div className='col-md-5'>
-
           <div className=''>
             <h4 className='px-3'>Get in Touch!</h4>
             <Form className='px-3 py-3' ref={form} onSubmit={handleSubmitForm}>
